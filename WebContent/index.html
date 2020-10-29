@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<form action="CalcServlet" method="post">
+  <table style="width:20%"class="table table-hover table-dark .table-striped">
+		<tr>
+			<th colspan="2">CALCULADORA</th>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr>
+			<td><label for="num1">N&uacute;mero 1:</label></td>
+			<td><input type="number" id="num2" name="numero1" size="2" required></td>
+		</tr>
+		<tr>
+			<td><label for="num2">N&uacute;mero 2:</label></td>
+			<td><input type="number" id="num2" name="numero2" size="2" required></td>
+
+		</tr>
+		<tr>
+			<td><label for="cal">Operaci&oacute;n:</label></td>
+			<td><select style="width:100px" name="operacion" id="calc">
+					<option value="suma">Sumar</option>
+					<option value="resta">Restar</option>
+					<option value="multiplicacion">Multiplicacion</option>
+					<option value="division">División</option>
+					<option value="resto">Residuo</option>
+			</select> <br></td>
+		</tr>		
+		
+	</table>
+	
+		<input class="btn btn-outline-primary" type="submit" value="calcular">
+			
+		
+</form>
+</body>
+
+</html>
